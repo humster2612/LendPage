@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html>
+<head lang="ua">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="LALA — команда в сфері арбітражу трафіку."> 
+    <title>Lala</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+    
+ 
+
+<!--Шрифты -->
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+</style>
+
+
+
+</head>
+
+
+<body> 
+
+
+
+
+<!--Form -->
+<!-- Полупрозрачный фон -->
+<div class="modal-overlay" id="modal-overlay"></div>
+
+<!-- Форма с анимацией звезд -->
+<div class="smallForm1 modal" id="form-section">
+    <span class="close-button-new" id="close-button-new">&times;</span>
+
+ 
+    <div class="form-image-container">
+        <img src="img/kosmonavtik1.png" alt="Astronaut image" class="form-logo">
+    </div>
+
+    <form action="api.php" method="post" id="form-new" class="form__body-new1">
+        <div class="form__title-new1"></div>
+        <div class="form__item-new1">
+            <input id="formName" class="offer__form-input-new1" type="text" placeholder="Ваше имя" name="name" required>
+        </div>
+        <div class="form__item-new1">
+            <input id="formPhone" class="offer__form-input-new1 phone-input-new" type="tel" placeholder="Ваш телефон" name="phone" required>
+        </div>
+        <div class="form__item-new1">
+            <input id="formEmail" class="offer__form-input-new1" type="email" placeholder="Ваша почта" name="email" required>
+        </div>
+        <div class="form__item-new1 checkbox-container">
+           
+          <label for="accept-terms">
+  <input type="checkbox" id="accept-terms" name="accept-terms" required>
+  <span class="bord"> Я принимаю правила и условия данного веб-ресурса  и даю согласие на обработку данных.</span>
+</label>
+
+        </div>
+        <button type="submit" class="popup-form-button-new1">Бесплатная консультация</button>
+    </form>
+</div>
+
+<!-- Контейнер для анимации звезд и комет -->
+<div class="stars">
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+</div>
+
+
+
+<!--Блок с меню __________________________________________________________-->
+  
+
+ <header>
+    <div class="head-block">
+        <div class="logo_menu">
+            <img src="img/Lalogo1.png" alt="logo">
+        </div>
+        <div class="right-icons">
+            
+            <div class="icon_mail">
+                <a href="mailto:example@example.com">
+                    <img src="img/messagenew.png" alt="mail">
+                </a>
+            </div>
+          
+
+            <div class="icon_telega">
+                <a href="https://t.me/yourtelegramlink" target="_blank">
+                    <img src="img/teleknew.png" alt="telegram">
+                </a>
+            </div>
+           
+            <div class="language-selector">
+                <select id="language-select" class="language-select">
+                    <option value="ua">UA</option>
+                    <option value="en">EN</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- __________________________________________________________-->
+
+
+
+
+
+
+<!-- Блок первый -->
+<div class="wrapper_first">
+
+ <!--<div class="letter-container">
+        <img src="img/Vector (1).png" alt="S" class="letter">
+        <img src="img/Vector (2).png" alt="O" class="letter">
+        <img src="img/Vector (3).png" alt="S" class="letter">
+        <img src="img/Vector (4).png" alt="O" class="letter">
+        <img src="img/Vector (5).png" alt="G" class="letter">
+    </div>-->
+
+   <!--     <div class="backimage ">
+            <img src="img/image1.1(1).png" alt="Background image">
+        </div>
+-->
+
+<div class="backimage">
+     
+         <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+            <source src="img/vid1an.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+    </div>
+
+
+ <div class="logo_saga">
+            <img  src="img/Lalogo1.png" alt="logo">
+        </div>
+    
+      
+        <div  class="text_first">
+           lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        </div>
+          <div class="buttonContainer_first">
+        <button class="custom-button-block1 buttonFirstblock1" id="buy-traffic-btn">Купити трафік</button>
+        <button class="custom-button-block1 buttonSecondblock2" id="sell-traffic-btn">Продати трафік</button>
+    </div>
+    </div>
+  
+
+
+
+
+
+<!--Для анимации косм корабля  
+
+<div class="spaceship">
+    <img src="img/spaceship1.png" alt="Spaceship">
+    <div id="smokeContainer"></div>
+</div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const smokeContainer = document.getElementById('smokeContainer');
+    const spaceship = document.querySelector('.spaceship');
+
+    function createSmoke() {
+        const particle = document.createElement('div');
+        particle.className = 'smokeParticle';
+        // Устанавливаем небольшое случайное смещение по горизонтали для увеличенной ширины траектории
+        particle.style.left = `${Math.random() * 20 - 10}px`; 
+        smokeContainer.appendChild(particle);
+
+        // Анимация для пузырьков дыма
+        particle.animate([
+            { transform: 'translateY(0) scale(1)', opacity: 0.95 }, // Плотный старт
+            { transform: 'translateY(100px) scale(1.2)', opacity: 0.9 }, // Немного расширяются
+            { 
+              transform: `translate(${Math.random() * 120 - 60}px, 200px) scale(1.5)`, 
+              opacity: 0.8 // Увеличенная ширина по бокам
+            },
+            { 
+              transform: `translate(${Math.random() * 150 - 75}px, 300px) scale(1.8)`, 
+              opacity: 0.6 // Дым еще больше расширяется
+            },
+            {
+              transform: `translate(${Math.random() * 200 - 100}px, 400px) scale(2)`, 
+              opacity: 0 // Полное исчезновение
+            }
+        ], {
+            duration: 4000 + Math.random() * 1000, // Длительная анимация
+            easing: 'ease-out'
+        }).onfinish = function() {
+            particle.remove(); // Удаляем частицы после завершения анимации
+        };
+    }
+
+    // Создаем новые частицы через частые интервалы для густого дыма
+    let smokeInterval = setInterval(createSmoke, 2); // Частый интервал для густого дыма
+
+    // Остановка дыма при достижении определенной высоты
+    spaceship.addEventListener('animationend', function() {
+        clearInterval(smokeInterval); // Останавливаем генерацию дыма, когда ракета улетает
+    });
+});
+
+
+</script>
+
+
+-->
+
+
+
+
+<!-- Блок второй   -->
+<div class="wrapper_second">
+    <div class="block_image_fon">
+        <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+            <source src="img/an2.2.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+    </div>
+
+    <div class="UnderBanner_underBanner__Pt6E9">
+     
+        <div class="UnderBanner_card__u5yIh block1 hidden">
+            <h4 class="UnderBanner_cardTitle__AD7J-">Виплати</h4>
+            <p class="UnderBanner_cardText__KN5sy">Можливі кожного дня</p>
+        </div>
+
+        <div class="UnderBanner_card__u5yIh block2 hidden">
+            <h4 class="UnderBanner_cardTitle__AD7J-">БІЛЬШЕ 2000</h4>
+            <p class="UnderBanner_cardText__KN5sy">Активних партнерів та гнучкі програми</p>
+        </div>
+
+        <div class="UnderBanner_lineWrap__aTb8v">
+            <img class="UnderBanner_lineImg__slWkS" src="img/lines.png" alt="Image with lines">
+        </div>
+
+        <div class="UnderBanner_card__u5yIh block3 hidden">
+            <h4 class="UnderBanner_cardTitle__AD7J-">CPI</h4>
+            <p class="UnderBanner_cardText__KN5sy">Отримайте виплату за кожного валідного ліда</p>
+        </div>
+
+        <div class="UnderBanner_card__u5yIh block4 hidden">
+            <h4 class="UnderBanner_cardTitle__AD7J-">СPA</h4>
+            <p class="UnderBanner_cardText__KN5sy">Отримайте комісію з першого депозиту запрошених клієнтів</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- __________________________________________________________  -->
+
+
+<!-- Летающий космический корабль   -->
+<!-- Летающий космический корабль с шлейфом пузырьков -->
+<div class="space-section">
+  <div class="astronaut">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS80fLVlpSBTmZCIxiQCd_3d5AuiG0YhcU9RWojye7ubdMSEzQm" alt="Astronaut">
+    <!-- Контейнер для пузырьков-шлейфа -->
+    <div class="trail"></div>
+  </div>
+
+  <div class="black-hole">
+    <div class="stars"></div>
+  </div>
+
+  <div class="big-text1" id="text">
+    ПРОПОЗИЦЇ:
+  </div>
+</div>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const spaceship = document.querySelector('.astronaut img');
+    const text = document.getElementById('text');
+    const spaceSection = document.querySelector('.space-section');
+
+    function startAnimation() {
+        spaceship.style.animationPlayState = 'running'; 
+    }
+
+    function showText() {
+        text.style.opacity = 1; 
+    }
+
+    spaceship.addEventListener('animationend', function () {
+        const rocketPosition = spaceship.getBoundingClientRect().left;
+        const halfScreenWidth = window.innerWidth / 2;
+
+        if (rocketPosition >= halfScreenWidth) {
+            showText(); 
+        }
+    });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startAnimation(); 
+            }
+        });
+    });
+
+    observer.observe(spaceSection); 
+
+
+ 
+    const trail = document.querySelector('.trail');
+    trail.style.animationPlayState = 'running';
+});
+
+
+
+
+
+
+
+</script>
+
+
+
+
+<!--____________________________________________________ -->
+
+<!-- Блок третий  Космонавтики  -->
+<!-- <div class="wrapper_third">-->
+
+
+
+<!--  <div class="wrapper_third">
+    <div class="spaceship">
+        <img src="img/spaceship1.png" alt="Spaceship">
+        <div id="smokeContainer"></div>
+    </div>
+</div>-->
+
+  <!--<div class="block_image3">
+        <img  src="img/image3.3(3).png" alt="Background image">
+
+    </div>
+
+
+
+    <div class="mini-image-blocks">
+        <div class="block_image_one">
+            <div class="imgsmall1">
+                <img  src="img/Mask_group0.0.0.png" alt="Image astronaut">
+            </div>
+            
+            <div class="imgsub-text">Більше 1000 пропозицій</div>
+        </div>
+
+        <div class="block_image_two">
+            <div class="imgsmall2">
+                <img  src="img/Mask_group1.1.1.png" alt="Image astronaut">
+            </div>
+            <div class="imgsub-text">Виплати щотижня</div>
+        </div>
+
+        <div class="block_image_three">
+            <div class="imgsmall3">
+                <img  src="img/Mask_group2.2.2.png" alt="Image astronaut">
+            </div>
+            <div class="imgsub-text">Програма лояльності</div>
+        </div>
+
+        <div class="block_image_four">
+            <div class="imgsmall4">
+                <img src="img/Mask_group3.3.3.png" alt="Image astronaut">
+            </div>
+            <div class="imgsub-text">Техпідтримка</div>
+        </div>
+    </div>
+
+</div>  -->
+
+<div class="wrapper_third">
+ 
+
+ <div class="block_image3">
+        <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+            <source src="img/image23.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+    </div>
+ 
+
+    <div class="mini-image-blocks">
+        <div class="block_image_one">
+            <img src="img/Mask_group0.0.0.png" alt="Image astronaut">
+            <div class="imgsub-text">Більше 1000 пропозицій</div>
+        </div>
+        <div class="block_image_two">
+            <img src="img/Mask_group1.1.1.png" alt="Image astronaut">
+            <div class="imgsub-text">Виплати щотижня</div>
+        </div>
+
+
+      
+
+        <div class="block_image_three">
+            <img src="img/Mask_group2.2.2.png" alt="Image astronaut">
+            <div class="imgsub-text">Програма лояльності</div>
+        </div>
+        <div class="block_image_four">
+            <img src="img/Mask_group3.3.3.png" alt="Image astronaut">
+            <div class="imgsub-text">Техпідтримка</div>
+        </div>
+    </div>
+    <div class="progress-bar" id="progressBar1"></div>
+    <div class="progress-bar" id="progressBar2" style="background-color: white;"></div> <!-- Синий для визуального различия -->
+</div>.    
+
+
+<!-- <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.mini-image-blocks > div');
+    let currentImageIndex = 0;
+
+    function showNextImage() {
+        if (currentImageIndex < images.length) {
+            images[currentImageIndex].style.opacity = 1; // Плавное появление изображения
+            currentImageIndex++;
+            setTimeout(showNextImage, 500); // Пауза между появлениями изображений (1 секунда)
+        }
+    }
+
+    // Настройка IntersectionObserver для отслеживания блока
+    const target = document.querySelector('.wrapper_third');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                showNextImage(); // Начинаем показ изображений при попадании блока в видимую область
+                observer.unobserve(target); // Останавливаем наблюдение, чтобы не запускать анимацию снова
+            }
+        });
+    }, {
+        threshold: 0.5 // Запуск анимации, когда 50% блока становится видимым
+    });
+
+    observer.observe(target); // Наблюдение за блоком .wrapper_third
+});
+
+</script>
+ -->
+
+<!-- 
+<script>
+let observer;
+let blockIsActive = false;  // Флаг активности блока
+let currentScroll = 0;  // Текущий индекс картинки
+let allowScroll = false;  // Разрешение на прокрутку страницы
+let delayInProgress = false;  // Признак того, что задержка уже запущена
+
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.querySelector('.wrapper_third');
+    const progressBar1 = document.querySelector('#progressBar1');
+    const progressBar2 = document.querySelector('#progressBar2');
+    const images = document.querySelectorAll('.mini-image-blocks > div');
+    const maxScroll = images.length;
+
+    function showImage() {
+        images[currentScroll].style.opacity = 1;
+        if (currentScroll < 2) {
+            progressBar1.style.width = `${((currentScroll + 1) / 2) * 100}%`;
+        } else {
+            progressBar2.style.width = `${((currentScroll - 1) / 2) * 100}%`;
+        }
+
+        currentScroll++;  // Увеличиваем индекс текущего изображения
+        delayInProgress = false;
+
+        // После показа каждой картинки проверяем, необходима ли прокрутка
+        if (currentScroll === 2 || currentScroll === maxScroll) {
+            allowScroll = true;
+            setTimeout(() => {
+                allowScroll = false;
+            }, 300);  // Пауза в 300 мс для небольшой прокрутки
+        }
+    }
+
+    function handleScroll(event) {
+        if (!blockIsActive || allowScroll || delayInProgress) return;
+
+        event.preventDefault();  // Предотвращаем прокрутку страницы
+
+        if (currentScroll < maxScroll) {
+            if (currentScroll === 0) {
+                showImage();  // Показываем первую картинку немедленно
+            } else {
+                delayInProgress = true;
+                setTimeout(showImage, 10);  // Задержка в 2 секунды перед показом каждой следующей картинки
+            }
+        } else {
+            blockIsActive = false;  // Выключаем блокировку скролла
+        }
+    }
+
+    // Создание и настройка observer
+    observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                blockIsActive = true;  // Активируем блок при появлении в области видимости
+                document.addEventListener('wheel', handleScroll, { passive: false });
+            } else {
+                blockIsActive = false;  // Деактивируем, если блок ушёл из области видимости
+                document.removeEventListener('wheel', handleScroll);
+            }
+        });
+    }, {
+        threshold: 0.5  // Триггер при видимости 50% элемента
+    });
+
+    observer.observe(target);  // Начать наблюдение за .wrapper_third
+});
+
+
+</script>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.querySelector('.wrapper_third');
+    const progressBar1 = document.querySelector('#progressBar1');
+    const progressBar2 = document.querySelector('#progressBar2');
+    const images = document.querySelectorAll('.mini-image-blocks > div');
+    const maxScroll = images.length;
+
+    function showImage() {
+        images[currentScroll].style.opacity = 1;
+        if (currentScroll < 2) {
+            progressBar1.style.width = `${((currentScroll + 1) / 2) * 100}%`;
+        } else {
+            progressBar2.style.width = `${((currentScroll - 1) / 2) * 100}%`;
+        }
+
+        currentScroll++; // Увеличиваем индекс текущего изображения
+        delayInProgress = false;
+
+        if (currentScroll === 2 || currentScroll === maxScroll) {
+            allowScroll = true;
+            setTimeout(() => {
+                allowScroll = false;
+            }, 300); // Пауза в 300 мс для небольшой прокрутки
+        }
+    }
+
+    function handleScroll(event) {
+        if (!blockIsActive || allowScroll || delayInProgress) return;
+        event.preventDefault(); // Предотвращаем прокрутку страницы
+        if (currentScroll < maxScroll) {
+            if (currentScroll === 0) {
+                showImage(); // Показываем первую картинку немедленно
+            } else {
+                delayInProgress = true;
+                setTimeout(showImage, 10); // Задержка в 200 мс перед показом следующей картинки
+            }
+        } else {
+            blockIsActive = false; // Выключаем блокировку скролла
+        }
+    }
+
+    observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                blockIsActive = true;
+                document.addEventListener('wheel', handleScroll, { passive: false });
+            } else {
+                blockIsActive = false;
+                document.removeEventListener('wheel', handleScroll);
+            }
+        });
+    }, {
+        threshold: 0.5 // Триггер при видимости 50% элемента
+    });
+
+    observer.observe(target);
+});
+
+</script>
+-->
+
+<!--Для анимации косм корабля 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const smokeContainer = document.getElementById('smokeContainer');
+
+    function createSmoke() {
+        const particle = document.createElement('div');
+        particle.className = 'smokeParticle';
+        // Center the particle horizontally and apply a random left offset
+        particle.style.left = `${Math.random() * 40 - 20}px`;
+        smokeContainer.appendChild(particle);
+
+        // Animation for particle to move downwards and grow
+        particle.animate([
+            { transform: 'translateY(0) scale(1)', opacity: 0.8 },
+            { transform: 'translateY(100px) scale(2)', opacity: 0 } // Adjusted for downward movement
+        ], {
+            duration: 2000 + Math.random() * 1000, // Longer duration for a slower effect
+            easing: 'ease-out'
+        }).onfinish = function() {
+            particle.remove(); // Clean up after animation completes
+        };
+    }
+
+    // Create new particles at intervals
+    setInterval(createSmoke, 150); // Increase frequency of particle creation for denser smoke
+});
+</script>
+--> 
+
+<!-- __________________________________________________________  -->
+
+<!-- Блок четвертый  Зигзаг :) -->
+<div class="wrapper_fourth">
+    <div class="line-blocks">
+        <div class="block block_one">
+            <div class="block-content">
+                <div class="imgsub-text1">Мінімальний депозит <br> 250 доларів США</div>
+                <div class="picture">
+                    <div class="glitch">
+                        <img src="img/kosmos1.png" alt="Space Image">
+                        <div class="glitch__layers">
+                            <div class="glitch__layer" style="background-image: url('img/kosmos1.png');"></div>
+                            <div class="glitch__layer" style="background-image: url('img/kosmos1.png');"></div>
+                            <div class="glitch__layer" style="background-image: url('img/kosmos1.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <button class="custom-button1 buttonFirst1">Приєднатися</button>
+        </div>
+
+        <!-- Вторая картинка с глитчем -->
+        <div class="block block_two">
+            <div class="block-content">
+                <div class="imgsub-text1">Ми приймаємо <br> трафік із 130+ країн</div>
+                <div class="picture2">
+                    <div class="glitch">
+                        <img src="img/kosmonavtik1.png" alt="Astronaut Image">
+                        <div class="glitch__layers">
+                            <div class="glitch__layer" style="background-image: url('img/kosmonavtik1.png');"></div>
+                            <div class="glitch__layer" style="background-image: url('img/kosmonavtik1.png');"></div>
+                            <div class="glitch__layer" style="background-image: url('img/kosmonavtik1.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <button class="custom-button1 buttonFirst1">Приєднатися</button>
+        </div>
+
+        <!-- Третья картинка с глитчем -->
+        <div class="block block_three">
+            <div class="block-content">
+                <div class="imgsub-text1">Регулярні виплати <br> щотижня</div>
+                <div class="picture3">
+                    <div class="glitch">
+                        <img src="img/luna1.png" alt="Moon Image">
+                        <div class="glitch__layers">
+                            <div class="glitch__layer" style="background-image: url('img/luna1.png');"></div>
+                            <div class="glitch__layer" style="background-image: url('img/luna1.png');"></div>
+                            <div class="glitch__layer" style="background-image: url('img/luna1.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <button class="custom-button1 buttonFirst1">Приєднатися</button>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+
+<!-- __________________________________________________________  -->
+
+
+
+
+
+
+<!-- Блок пятый   АНИМАЦИЯ -->
+<div class="wrap">
+    <div class="items-wrap">
+        <div class="items marquee row-1">
+            <div class="item">
+                НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ</div>
+        </div>
+        <div class="items marquee row-2">
+            <div class="item">ВИПЛАТИ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ ВИПЛАТИ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ</div>
+        </div>
+        <div class="items marquee row-3">
+            <div class="item">НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ </div>
+        </div>
+        <div class="items marquee row-4">
+            <div class="item">НЕОБМЕЖЕНІ КАПИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ЩОДЕННІ НЕОБМЕЖЕНІ КАПИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ЩОДЕННІ ВИПЛАТИ СТАНДАРТНІ НЕОБМЕЖЕНІ КАПИ ЩОДЕННІ</div>
+        </div>
+        <div class="items marquee row-5">
+            <div class="item">ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ</div>
+        </div>
+        <div class="items marquee row-6">
+            <div class="item">НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ НЕСТАНДАРТНІ ВИПЛАТИ ЩОДЕННІ ВИПЛАТИ НЕСТАНДАРТНІ</div>
+        </div>
+    </div>
+    <div class="center-logo">
+        <img src="img/Lalogo1.png" alt="Logo black">
+    </div>
+</div>
+
+   
+    
+
+
+
+
+
+
+
+
+
+<!-- __________________________________________________________  -->
+
+
+<!-- Блок 6  длинный блок с кораблями и вставкой большого текста   -->
+<div class="wrapper_six">
+    <div class="background-image">
+        <img src="img/img4.4.png" alt="Background Image">
+    </div>
+
+    <div class="overlay-content">
+        <div class="containers">
+            <div class="first-container">
+                <div class="text-container">
+                    <p>NFT</p>
+                    <p>CPA-NETWORK</p>
+                    <p>CPA: $750-1050</p>
+                    <p>CR: 21%</p>
+                </div>
+            </div>
+            <div class="second-container">
+                <div class="text-container">
+                    <p>РЕВОЛЮЦІЯ ПРИБУТКУ</p>
+                    <p>CPA-NETWORK</p>
+                    <p>CPA: $450-600</p>
+                    <p>CR: 10%</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="buttons">
+            <div class="button-wrapper">
+                <button class="custom-button buttonFirst" id="consultation-button">Купити трафік</button>
+            </div>
+            <div class="button-wrapper">
+                <button class="custom-button buttonSecond" id="consultation-button">Продати трафік</button>
+            </div>
+        </div>
+        <div class="big-text">
+            ПРИЄДНУЙТЕСЬ ДО <br> <span class="highlight">LALA</span> ВЖЕ СЬОГОДНІ:
+        </div>
+    </div>
+</div>
+
+
+
+
+
+             <!-- Сюда херякнуть картинки с косм кораблем они типа на бекграунд картинке -->
+
+      <div class="pictures-container">
+  <!--  <div class="pictures-item">
+        <img src="img/korab1.1.png" alt="Program Image">
+        <div class="tabsText">ПРОГРАММА ЛОЯЛЬНОСТИ</div>
+    </div>
+    -->
+<div class="pictures-item">
+    <video autoplay loop muted playsinline style="  width: 70%; height: 70%; object-fit: cover; z-index: 0;">
+        <source src="img/1space.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+    <div class="tabsText">ПРОГРАММА ЛОЯЛЬНОСТИ</div>
+</div>
+
+       
+   <!-- <div class="pictures-item">
+        <img src="img/2.2.png" alt="Geo Image">
+        <div class="tabsText">ВСЕМИРНЫЙ ГЕО</div>
+    </div>-->
+
+
+<div class="pictures-item">
+    <video autoplay loop muted playsinline style="  width: 70%; height: 70%; object-fit: cover; z-index: 0;">
+        <source src="img/2space.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+        <div class="tabsText">ВСЕМИРНЫЙ ГЕО</div>
+</div>
+
+   <!-- <div class="pictures-item">
+        <img src="img/3.3.png" alt="Payments Image">
+        <div class="tabsText">ВЫПЛАТЫ КАЖДУЮ НЕДЕЛЮ</div>
+    </div>-->
+
+<div class="pictures-item">
+    <video autoplay loop muted playsinline style="  width: 70%; height: 70%; object-fit: cover; z-index: 0;">
+        <source src="img/3space.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+    <div class="tabsText">ВЫПЛАТЫ КАЖДУЮ НЕДЕЛЮ</div>
+</div>
+
+
+
+  <!--  <div class="pictures-item">
+        <img src="img/4.4.png" alt="Top Creative Image">
+        <div class="tabsText">ТОПОВЫЕ КРЕО</div> 
+    </div>
+</div>-->
+
+
+<div class="pictures-item">
+    <video autoplay loop muted playsinline style="  width: 70%; height: 70%; object-fit: cover; z-index: 0;">
+        <source src="img/4space.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+     <div class="tabsText">ТОПОВЫЕ КРЕО</div> 
+</div>
+
+<!-- __________________________________________________________  -->
+
+                                                     
+<!-- Блок 7   Оранжевый блок с текстом -->
+<div class="wrapper_seven">
+    <div class="orange-square-container">
+        <div class="spaceship">
+            <img src="img/rocket.png" alt="Spaceship">
+            <div id="smokeContainer"></div>
+        </div>
+        <div class="orange-square-container-text animate-text">
+            ОТРИМАЙТЕ ДОХОДИ ЗА ДОПОМОГОЮ ОДНОГО З НАШИХ МЕТОДІВ
+        </div>
+        <button class="custom-button2 buttonFirst" id="consultation-button">
+            Продати трафік
+        </button>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const text = document.querySelector('.orange-square-container-text');
+    
+    function animateText(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(animateText, {
+        threshold: 0.1
+    });
+
+    observer.observe(text);
+});
+
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const spaceship = document.querySelector('.spaceship');
+    const smokeContainer = document.getElementById('smokeContainer');
+
+    function createSmoke() {
+        const particle = document.createElement('div');
+        particle.className = 'smokeParticle';
+        
+        const direction = Math.random() < 0.5 ? -1 : 1;
+        particle.style.setProperty('--direction', direction);
+
+        particle.style.left = `${Math.random() * 40 - 20}px`;
+        smokeContainer.appendChild(particle);
+
+        particle.animate([
+            { transform: 'translateY(0) scale(1)', opacity: 0.8 },
+            { transform: 'translateY(30px) scale(1.5)', opacity: 0.6 },
+            { transform: `translateY(40px) translateX(${50 * direction}px) scale(2.5)`, opacity: 0 }
+        ], {
+            duration: 3000 + Math.random() * 1000,
+            easing: 'ease-out'
+        }).onfinish = function() {
+            particle.remove();
+        };
+    }
+
+    function startRocketAnimation() {
+        spaceship.style.animation = 'launch 2s linear forwards'; 
+        const smokeInterval = setInterval(createSmoke, 50);
+
+        setTimeout(() => {
+            clearInterval(smokeInterval);
+        }, 5000);
+
+        setTimeout(() => {
+            const smokeParticles = document.querySelectorAll('.smokeParticle');
+            smokeParticles.forEach(particle => particle.remove());
+        }, 5000);
+    }
+
+    function launchRocket(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startRocketAnimation(); 
+                observer.unobserve(entry.target); 
+            }
+        });
+    }
+
+    const rocketObserver = new IntersectionObserver(launchRocket, {
+        threshold: 0.5 
+    });
+
+    rocketObserver.observe(spaceship);
+});
+</script>
+
+
+
+<!-- __________________________________________________________  -->
+
+
+<!-- Блок 8 -->
+<div class="wrapper_eight">
+ 
+    <div class="block_image8">
+        <img src="img/image5(5).png" alt="Background Image">
+    </div>
+
+    <div class="content-container">
+        <div class="main-text">ЯК ВСЕ ПРАЦЮЄ?</div>
+        <div class="text-blocks-container">
+            <div class="text-block">
+                <div class="hesh">#01</div>
+                <div class="line"></div>
+                <div class="text">Гнучкі інструменти інтеграції</div>
+            </div>
+            <div class="text-block">
+                <div class="hesh">#02</div>
+                <div class="line"></div>
+                <div class="text">Статистика в реальному часі</div>
+            </div>
+            <div class="text-block">
+                <div class="hesh">#03</div>
+                <div class="line"></div>
+                <div class="text">Ви можете зв’язати й оптимізувати свої кампанії на всіх платформах</div>
+            </div>
+            <div class="text-block">
+                <div class="hesh">#04</div>
+                <div class="line"></div>
+                <div class="text">Відстежуйте показники переходів ефективність на панелі партнера</div>
+            </div>
+        </div>
+    </div>
+
+   
+     <!--<div class="block_image-covered-hand">
+        <img src="img/hand1.png" alt="Hand Image">
+    </div> -->
+
+   <div class="block_image-covered-hand">
+    <video autoplay loop muted playsinline style="  width: 100%; height: 80%; object-fit: cover; z-index: 0;" >
+        <source src="img/anhand1.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+</div>
+
+
+
+         </div> 
+
+</div>
+    
+
+
+  <!-- <div class="block_image-covered-hand">
+     <video autoplay loop muted playsinline >
+            <source src="img/anhand1.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+
+
+         </div> 
+</div>
+-->
+<!-- __________________________________________________________  -->
+
+
+
+<!-- __________________________________________________________  -->
+
+
+<!-- Блок 9   АНИМАЦИЯ 
+
+
+<div class="marquee-container">
+  <div class="items-wrap">
+        <div class="items marquee">
+            <div class="item">заробляйте до $1200 на депозитах  від унікальних та активних клієнтів </div>
+            <div class="item"></div>
+        </div>
+        <div aria-hidden="true" class="items marquee">
+            <div class="item">заробляйте до $1200 на депозитах  від унікальних та активних клієнтів</div>
+            <div class="item"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="wrap">
+    <div class="marquee-container1">
+        <div class="marquee1">
+            заробляйте до $1200 на депозитах від унікальних та активних клієнтів заробляйте до $1200 на депозитах від унікальних та активних клієнтів
+        </div>
+        <div aria-hidden="true" class="marquee1">
+            заробляйте до $1200 на депозитах від унікальних та активних клієнтів заробляйте до $1200 на депозитах від унікальних та активних клієнтів
+        </div>
+    </div>
+</div>-->
+
+
+<div class="marquee-container1">
+    <div class="marquee1">
+<span> заробляйте до <span class="highlight">$1200</span> на депозитах від унікальних та активних клієнтів &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span> заробляйте до <span class="highlight">$1200</span> на депозитах від унікальних та активних клієнтів &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span> заробляйте до <span class="highlight">$1200</span> на депозитах від унікальних та активних клієнтів &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span> заробляйте до <span class="highlight">$1200</span> на депозитах від унікальних та активних клієнтів &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+</div>
+
+
+
+
+
+<!-- __________________________________________________________  -->
+
+
+<script src="js/script.js"></script>   
+
+
+
+
+
+
+<!-- АНИМАЦИЯ ДЛЯ ВТОРОЙ СЕКЦИИ САЙТА БЛОКИ ДВИЖ В ВВЕРХ   -->
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px',
+        threshold: 0.1 
+    };
+
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(el => observer.observe(el));
+});
+
+</script>
+
+
+
+<!-- АНИМАЦИЯ ДЛЯ четвертой  СЕКЦИИ САЙТА ЛЕТАЮЗИЕ ЭЛЕМЕНТЫ    -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const blocks = document.querySelectorAll('.block');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');  
+            } else {
+                entry.target.classList.remove('animate');  
+            }
+        });
+    }, {
+        threshold: 0.1 
+    });
+
+    blocks.forEach(block => {
+        observer.observe(block);
+    });
+});
+</script>
+
+
+
+
+
+<!-- АНИМАЦИЯ ДЛЯ ТЕКСТА  ПРИЕДНЮЙТЕСЬ ДО САГА ВСЕ СЬОГОДНИ    -->
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const bigText = document.querySelector('.big-text');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate'); 
+            } else {
+                entry.target.classList.remove('animate'); 
+            }
+        });
+    }, {
+        threshold: 0.5 
+    });
+
+    observer.observe(bigText); 
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
